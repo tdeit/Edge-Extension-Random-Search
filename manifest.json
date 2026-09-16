@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Random Bing Search Tabs",
+  "version": "1.0.0",
+  "description": "Open multiple Bing search tabs with meaningful randomized English and Vietnamese queries.",
+  "action": {
+    "default_title": "Random Bing Search Tabs",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}

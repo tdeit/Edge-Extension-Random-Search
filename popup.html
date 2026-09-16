@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Bing Search Tabs</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Bing Search Tabs</h1>
+
+      <label class="field">
+        <span>Tabs</span>
+        <input id="count" type="number" min="1" max="30" value="10">
+      </label>
+
+      <label class="field">
+        <span>Language</span>
+        <select id="language">
+          <option value="mixed" selected>English + Vietnamese</option>
+          <option value="en">English only</option>
+          <option value="vi">Vietnamese only</option>
+        </select>
+      </label>
+
+      <button id="openTabs" type="button">Open Searches</button>
+
+      <section class="preview" aria-live="polite">
+        <div class="previewHeader">
+          <span>Preview</span>
+          <button id="refreshPreview" type="button" title="Refresh preview">Refresh</button>
+        </div>
+        <ol id="queries"></ol>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
